@@ -16,6 +16,10 @@ Para executar esse projeto é necessário executar o banco de dados Derby, em se
 
 `mvn exec:java@derby-stop`
 
+### Para baixar o npm ( Obs.: Instalado no PC )
+
+`npm install`
+
 ### Para executar o Tomcat
 
 `mvn tomcat7:run`
@@ -45,5 +49,4 @@ create table evento (
   cidade varchar(100)
 )
 ```
-# RoleUniv.com
-# RoleUniv.com
+
