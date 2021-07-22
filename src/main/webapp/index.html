@@ -1,0 +1,344 @@
+<!doctype <!DOCTYPE html>
+
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="PW" content="" />
+
+	<title>RoleUniv.com</title>
+
+	<!-- Bootstrap para CSS -->
+	<link href="frameworks/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+	<!-- Estilo css slide -->
+	<link href="css/slide.css" rel="stylesheet" />
+
+
+
+	<!-- Bootstrap para JavaScript -->
+	<script src="frameworks/jquery/jquery.min.js"></script>
+	<script src="frameworks/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+
+	<!-- Navegação Menu principal -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">RoleUniv.com</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+			 aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<!--<a class="nav-link" href="cadastro.html">Inscreva-se</a>-->
+					</li>
+					<li class="nav-item"><a class="nav-link" href="cadastro.html">Entrar</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<header>
+
+		<div class="row">
+			<div class="col-md-8 offset-md-2">
+
+				<div class="row">
+
+					<div class="col-6 col-md-4">
+						<!--Box de Pesquisa-->
+						<div class="container" style="background-color: #d2d2f9; height: 60%; margin-top: 65px">
+
+							<div class="well">
+								<form class="form-horizontal" action="ListarEventoServlet" method="post">
+									<div class="form-group">
+										<label for="evento" class="control-label" style="padding-top: 25px">Evento</label>
+										<div class="input-group">
+
+											<input name="nome" type="text" class="form-control" id="evento">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="location" class="control-label">Cidade</label> <select class="custom-select" name="" id="location">
+											<option value="">Goiânia</option>
+											<option value="">Anápolis</option>
+											<option value="">Brasília</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="type1" class="control-label">Universidade</label>
+										<select class="custom-select" name="" id="type1">
+											<option value="">UFG</option>
+											<option value="">PUC</option>
+											<option value="">UNB</option>
+										</select>
+									</div>
+									<input type="submit" value="Buscar" style="padding-top: 15px" class=" text-center btn btn-primary btn-lg btn-block" />
+								</form>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-12 col-md-8">
+						<!--Carossel -->
+						<div class="container" style="margin-top: 65px">
+
+							<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+								<ol class="carousel-indicators">
+									<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+								</ol>
+								<div class="carousel-inner" role="listbox">
+									<!-- Slide primeiro -->
+									<div class="carousel-item active" style="background-image: url('imagens/show.jpg')">
+										<div class="carousel-caption d-none d-md-block text-right">
+											<h3>RoleUniv.com</h3>
+											<p>Clique em Eventos e busque pelo seu evento preferido.</p>
+										</div>
+									</div>
+									<!-- Slide segundo -->
+									<div class="carousel-item" style="background-image: url('imagens/musica.jpg')">
+										<div class="carousel-caption d-none d-md-block text-right">
+											<h3>RoleUniv.com</h3>
+											<p>Muitas baladas e shows.</p>
+										</div>
+									</div>
+									<!-- Slide terceiro -->
+									<div class="carousel-item" style="background-image: url('imagens/dj.jpg')">
+										<div class="carousel-caption d-none d-md-block text-right">
+											<h3>RoleUniv.com</h3>
+											<p>Cadastre e participe de nossas promoções.</p>
+										</div>
+									</div>
+								</div>
+								<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"> <span class="carousel-control-prev-icon"
+									 aria-hidden="true"></span> <span class="sr-only">Proximo</span>
+								</a> <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"> <span
+									 class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Anterior</span>
+								</a>
+							</div>
+
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+
+	</header>
+	<!-- Pagina do contanier -->
+	<section class="py-5">
+
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-3">
+					<div class="card">
+						<img class="card-img-top" src="imagens/chop.jpg" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title border-bottom pb-3">
+								Card title <a href="#" class="float-right d-inline-flex share"><i class="fas fa-share-alt text-primary"></i></a>
+							</h5>
+							<p class="card-text">Some quick example text to build on the
+								card title and make up the bulk of the card's content.</p>
+							<a href="descricao.html" class="btn btn-sm btn-info float-right">Read
+								more <i class="fas fa-angle-double-right"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card">
+						<img class="card-img-top" src="imagens/festa.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title border-bottom pb-3">
+								Card title <a href="#" class="float-right d-inline-flex share"><i class="fas fa-share-alt text-primary"></i></a>
+							</h5>
+							<p class="card-text">Some quick example text to build on the
+								card title and make up the bulk of the card's content.</p>
+							<a href="descricao.html" class="btn btn-sm btn-info float-right">Read
+								more <i class="fas fa-angle-double-right"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card">
+						<img class="card-img-top" src="imagens/chop.jpg" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title border-bottom pb-3">
+								Card title <a href="#" class="float-right d-inline-flex share"><i class="fas fa-share-alt"></i></a>
+							</h5>
+							<p class="card-text">Some quick example text to build on the
+								card title and make up the bulk of the card's content.</p>
+							<a href="descricao.html" class="btn btn-sm btn-info float-right">Read
+								more <i class="fas fa-angle-double-right"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card bg-light">
+						<img class="card-img-top" src="imagens/festa.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title border-bottom pb-3">
+								Card title <a href="#" class="float-right d-inline-flex share"><i class="fas fa-share-alt"></i></a>
+							</h5>
+							<p class="card-text">Some quick example text to build on the
+								card title and make up the bulk of the card's content.</p>
+							<a href="descricao.html" class="btn btn-sm btn-info float-right">Read
+								more <i class="fas fa-angle-double-right"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+	<section class="py-5">
+
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-3">
+					<div class="card">
+						<img class="card-img-top" src="imagens/chop.jpg" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title border-bottom pb-3">
+								Card title <a href="#" class="float-right d-inline-flex share"><i class="fas fa-share-alt text-primary"></i></a>
+							</h5>
+							<p class="card-text">Some quick example text to build on the
+								card title and make up the bulk of the card's content.</p>
+							<a href="descricao.html" class="btn btn-sm btn-info float-right">Read
+								more <i class="fas fa-angle-double-right"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card">
+						<img class="card-img-top" src="imagens/festa.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title border-bottom pb-3">
+								Card title <a href="#" class="float-right d-inline-flex share"><i class="fas fa-share-alt text-primary"></i></a>
+							</h5>
+							<p class="card-text">Some quick example text to build on the
+								card title and make up the bulk of the card's content.</p>
+							<a href="descricao.html" class="btn btn-sm btn-info float-right">Read
+								more <i class="fas fa-angle-double-right"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card">
+						<img class="card-img-top" src="imagens/chop.jpg" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title border-bottom pb-3">
+								Card title <a href="#" class="float-right d-inline-flex share"><i class="fas fa-share-alt"></i></a>
+							</h5>
+							<p class="card-text">Some quick example text to build on the
+								card title and make up the bulk of the card's content.</p>
+							<a href="descricao.html" class="btn btn-sm btn-info float-right">Read
+								more <i class="fas fa-angle-double-right"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card bg-light">
+						<img class="card-img-top" src="imagens/festa.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title border-bottom pb-3">
+								Card title <a href="#" class="float-right d-inline-flex share"><i class="fas fa-share-alt"></i></a>
+							</h5>
+							<p class="card-text">Some quick example text to build on the
+								card title and make up the bulk of the card's content.</p>
+							<a href="descricao.html" class="btn btn-sm btn-info float-right">Read
+								more <i class="fas fa-angle-double-right"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+	<!-- Foolders -->
+	<footer class="py-5 bg-dark">
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-md-3">
+					<ul class="list-unstyled">
+						<li>RoleUniv.com</li>
+						<li><a href="#">Sobre</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Contato</a></li>
+						<li><a href="#">Status do site</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="list-unstyled">
+						<li>Aplicativos</li>
+						<li><a href="#">Mac</a></li>
+						<li><a href="#">Windows</a></li>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">Android</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="list-unstyled">
+						<li>Serviços</li>
+						<li><a href="#">Imagens</a></li>
+						<li><a href="#">Localizações</a></li>
+						<li><a href="#">Publicidade</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="list-unstyled">
+						<li>Redes Sociais</li>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">Instagram</a></li>
+						<li><a href="#">Twitter</a></li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="row">
+
+				<div class="col-md-8">
+					<a href="#">Termos de uso</a> <a href="#">Privacidade</a> <a href="#">Securança</a>
+				</div>
+				<div class="col-md-4">
+					<p class="muted pull-right">© roleuniv.com Todos os direitos
+						reservados</p>
+				</div>
+
+			</div>
+
+
+		</div>
+		<!-- /.container -->
+	</footer>
+
+</body>
+
+</html>
